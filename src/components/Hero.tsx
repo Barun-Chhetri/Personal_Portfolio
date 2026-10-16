@@ -163,7 +163,7 @@ export const Hero: React.FC = () => {
               </picture>
 
               {/* Spider-Man Red and Cyan Rim Light Gradients */}
-              <div className="absolute inset-0 bg-gradient-to-t from-[#030712] via-transparent to-transparent opacity-80" />
+              <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-[#030712] via-[#030712]/60 to-transparent pointer-events-none" />
               <div className="absolute inset-0 bg-gradient-to-r from-red-600/15 via-transparent to-cyan-500/15 pointer-events-none" />
 
               {/* Holographic HUD Overlay on Hover */}

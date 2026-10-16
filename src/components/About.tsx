@@ -46,12 +46,16 @@ export const About: React.FC = () => {
           >
             <div className="relative w-full max-w-[360px] rounded-3xl p-3 spider-glass border border-red-500/30 shadow-spider-red group">
               <div className="relative rounded-2xl overflow-hidden aspect-[3/4] bg-slate-900 shadow-inner">
-                <img
-                  src={PERSONAL_INFO.profileFallback}
-                  alt="Barun Chhetri"
-                  className="w-full h-full object-cover object-top filter contrast-[1.03] group-hover:scale-105 transition-transform duration-500"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#030712] via-transparent to-transparent opacity-80" />
+                <picture>
+                  <source srcSet={PERSONAL_INFO.profileImage} type="image/webp" />
+                  <img
+                    src={PERSONAL_INFO.profileFallback}
+                    alt="Barun Chhetri"
+                    className="w-full h-full object-cover object-top filter contrast-[1.03] group-hover:scale-105 transition-transform duration-500"
+                    loading="lazy"
+                  />
+                </picture>
+                <div className="absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-[#030712] via-[#030712]/60 to-transparent pointer-events-none" />
                 <div className="absolute bottom-4 left-4 right-4">
                   <div className="px-3 py-2 rounded-xl spider-glass border border-slate-700/60 backdrop-blur-md">
                     <p className="text-xs font-mono text-cyan-300 flex items-center gap-1.5">
