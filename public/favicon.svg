@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <defs>
+    <radialGradient id="spiderGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ff1f2d" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#00d4ff" stop-opacity="0.2"/>
+    </radialGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="glow" />
+      <feComposite in="SourceGraphic" in2="glow" operator="over" />
+    </filter>
+  </defs>
+  <circle cx="50" cy="50" r="46" fill="#060d1f" stroke="#e62429" stroke-width="2.5" />
+  <circle cx="50" cy="50" r="42" stroke="#00d4ff" stroke-width="1" stroke-dasharray="2 3" opacity="0.6" />
+  
+  <!-- Spider Body & Emblem -->
+  <g filter="url(#glow)">
+    <!-- Spider Head -->
+    <ellipse cx="50" cy="38" rx="4.5" ry="5.5" fill="#e62429" />
+    <!-- Spider Abdomen -->
+    <ellipse cx="50" cy="54" rx="6.5" ry="11.5" fill="#e62429" />
+    <path d="M48 65 L50 72 L52 65 Z" fill="#e62429" />
+    
+    <!-- Left Top Leg -->
+    <path d="M47 37 Q36 26 26 31 Q20 34 16 46" stroke="#e62429" stroke-width="2.5" stroke-linecap="round" fill="none" />
+    <!-- Left Mid-Top Leg -->
+    <path d="M46 41 Q32 36 24 45 Q18 52 17 62" stroke="#e62429" stroke-width="2.5" stroke-linecap="round" fill="none" />
+    <!-- Left Mid-Bottom Leg -->
+    <path d="M46 51 Q32 55 26 66 Q22 75 22 84" stroke="#00d4ff" stroke-width="2.5" stroke-linecap="round" fill="none" />
+    <!-- Left Bottom Leg -->
+    <path d="M47 57 Q38 68 34 78 Q30 87 32 94" stroke="#00d4ff" stroke-width="2.5" stroke-linecap="round" fill="none" />
+
+    <!-- Right Top Leg -->
+    <path d="M53 37 Q64 26 74 31 Q80 34 84 46" stroke="#e62429" stroke-width="2.5" stroke-linecap="round" fill="none" />
+    <!-- Right Mid-Top Leg -->
+    <path d="M54 41 Q68 36 76 45 Q82 52 83 62" stroke="#e62429" stroke-width="2.5" stroke-linecap="round" fill="none" />
+    <!-- Right Mid-Bottom Leg -->
+    <path d="M54 51 Q68 55 74 66 Q78 75 78 84" stroke="#00d4ff" stroke-width="2.5" stroke-linecap="round" fill="none" />
+    <!-- Right Bottom Leg -->
+    <path d="M53 57 Q62 68 66 78 Q70 87 68 94" stroke="#00d4ff" stroke-width="2.5" stroke-linecap="round" fill="none" />
+  </g>
+</svg>
