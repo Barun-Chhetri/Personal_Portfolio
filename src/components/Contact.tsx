@@ -10,7 +10,8 @@ import {
   AlertCircle,
   Sparkles,
   MapPin,
-  ExternalLink
+  ExternalLink,
+  Phone
 } from 'lucide-react';
 import { GithubIcon, LinkedinIcon } from './Icons';
 
@@ -90,7 +91,7 @@ export const Contact: React.FC = () => {
             </span>
           </h2>
           <p className="mt-3 text-slate-400 text-sm sm:text-base">
-            Open for Summer 2027 Software Engineering, Data Pipeline, and AI/ML internship opportunities, or discussing ambitious web architectures.
+            Open for May 2027 Data Acquisition, Software Engineering, and AI/ML internship opportunities, or discussing ambitious web architectures.
           </p>
         </div>
 
@@ -133,16 +134,30 @@ export const Contact: React.FC = () => {
               </a>
             </div>
 
-            {/* Location & Status */}
-            <div className="p-5 rounded-2xl spider-glass border border-slate-800 flex items-center justify-between text-xs font-mono">
-              <div className="flex items-center gap-2 text-slate-300">
-                <MapPin className="w-4 h-4 text-red-400" />
-                <span>Location: {PERSONAL_INFO.location}</span>
+            {/* Location, Phone & Status */}
+            <div className="p-5 rounded-2xl spider-glass border border-slate-800 space-y-2.5 text-xs font-mono">
+              <div className="flex items-center justify-between gap-2">
+                <div className="flex items-center gap-2 text-slate-300">
+                  <MapPin className="w-4 h-4 text-red-400 shrink-0" />
+                  <span>Location: {PERSONAL_INFO.location}</span>
+                </div>
+                <span className="text-emerald-400 flex items-center gap-1">
+                  <span className="w-2 h-2 rounded-full bg-emerald-400 animate-ping" />
+                  <span>Available May 2027</span>
+                </span>
               </div>
-              <span className="text-emerald-400 flex items-center gap-1">
-                <span className="w-2 h-2 rounded-full bg-emerald-400 animate-ping" />
-                <span>Available May 2027</span>
-              </span>
+              <div className="pt-2 border-t border-slate-800/80 flex items-center justify-between text-slate-400">
+                <div className="flex items-center gap-2">
+                  <Phone className="w-3.5 h-3.5 text-cyan-400 shrink-0" />
+                  <span>Phone:</span>
+                </div>
+                <a
+                  href={`tel:${PERSONAL_INFO.phone.replace(/[^0-9]/g, '')}`}
+                  className="text-cyan-300 hover:text-white transition-colors"
+                >
+                  {PERSONAL_INFO.phone}
+                </a>
+              </div>
             </div>
 
             {/* Social Channels */}

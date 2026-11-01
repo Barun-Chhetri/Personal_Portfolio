@@ -51,11 +51,11 @@ export const Footer: React.FC = () => {
             </span>
             <span className="text-red-500 font-bold">·</span>
             <span className="text-xs font-mono text-cyan-400">
-              Full-Stack Developer
+              Full-Stack &amp; Data Pipelines
             </span>
           </div>
           <p className="text-xs text-slate-500">
-            Computer Science @ University of North Texas · Software Engineering &amp; AI
+            Computer Science @ University of North Texas · Software Engineering, Data Ingestion &amp; AI
           </p>
         </div>
 

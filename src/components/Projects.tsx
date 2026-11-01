@@ -108,7 +108,7 @@ export const Projects: React.FC = () => {
                           Verified Highlights:
                         </h4>
                         <ul className="space-y-1.5 text-xs text-slate-300">
-                          {project.keyHighlights.slice(0, 3).map((hl, hIdx) => (
+                          {project.keyHighlights.map((hl, hIdx) => (
                             <li key={hIdx} className="flex items-start gap-2">
                               <CheckCircle2 className="w-4 h-4 text-cyan-400 shrink-0 mt-0.5" />
                               <span>{hl}</span>
@@ -182,12 +182,12 @@ export const Projects: React.FC = () => {
                             $ curl -X POST /api/v1/resume/analyze \
                           </div>
                           <div className="text-slate-400 pl-4">
-                            -F "resume=@Barun_Chhetri_Resume.pdf" \
+                            -F "resume=@Barun_Chhetri_Resume_2026_Updated.pdf" \
                             <br />
                             -F "job_id=senior-fullstack-dev"
                           </div>
                           <div className="pt-2 text-emerald-400">
-                            ✓ Document Parsed (Apache PDFBox)
+                            ✓ Document Ingestion (Apache PDFBox &amp; POI)
                           </div>
                           <div className="text-emerald-400">
                             ✓ Embeddings: 1536-dim unit vector generated

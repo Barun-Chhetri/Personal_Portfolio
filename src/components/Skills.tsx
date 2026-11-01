@@ -144,17 +144,21 @@ export const Skills: React.FC = () => {
 
         {/* All-Category Grid Summary Bar */}
         <div className="mt-14 p-6 rounded-2xl spider-glass border border-slate-800 text-center">
-          <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-4 text-xs font-mono text-slate-300">
+          <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-3 text-xs font-mono text-slate-300">
             <div>
-              <span className="text-red-400 font-bold">Languages:</span> Java 21, Python, JavaScript, TypeScript, SQL
+              <span className="text-red-400 font-bold">Languages:</span> Java, Python, SQL, JavaScript, TypeScript
             </div>
-            <div className="hidden sm:inline text-slate-700">·</div>
+            <div className="hidden md:inline text-slate-700">·</div>
             <div>
-              <span className="text-cyan-400 font-bold">Frameworks:</span> Spring Boot 3.4, React 18, Next.js, Express
+              <span className="text-cyan-400 font-bold">Frameworks:</span> Spring Boot, Spring AI, React 19, Next.js 16, PDFBox, POI, Prisma
             </div>
-            <div className="hidden sm:inline text-slate-700">·</div>
+            <div className="hidden md:inline text-slate-700">·</div>
             <div>
-              <span className="text-emerald-400 font-bold">Data &amp; AI:</span> PostgreSQL 16, PGVector, Spring AI, Docker
+              <span className="text-emerald-400 font-bold">Data &amp; AI:</span> PostgreSQL, PGVector, Semantic RAG, Entity Resolution, ETL
+            </div>
+            <div className="hidden md:inline text-slate-700">·</div>
+            <div>
+              <span className="text-amber-400 font-bold">Tools &amp; Testing:</span> Docker, REST API, OpenAPI, AWS, Flyway, JUnit, Vitest, JWT, BCrypt
             </div>
           </div>
         </div>

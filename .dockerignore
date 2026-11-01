@@ -1,0 +1,7 @@
+node_modules
+dist
+.git
+.DS_Store
+*.log
+screenshot_*.png
+test-e2e.cjs

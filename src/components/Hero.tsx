@@ -11,7 +11,8 @@ import {
   ShieldCheck,
   Cpu,
   Layers,
-  ChevronRight
+  ChevronRight,
+  FileText
 } from 'lucide-react';
 import { GithubIcon } from './Icons';
 
@@ -58,7 +59,7 @@ export const Hero: React.FC = () => {
           {/* Supporting Bio */}
           <p className="text-base sm:text-lg text-slate-300 max-w-2xl leading-relaxed mb-8">
             Hi, I’m <strong className="text-white font-semibold">Barun Chhetri</strong> — a Computer Science junior at the{' '}
-            <span className="text-cyan-400 font-medium">University of North Texas (GPA 3.85)</span> specializing in full-stack architecture,
+            <span className="text-cyan-400 font-medium">University of North Texas (GPA 3.85)</span> specializing in data acquisition pipelines,
             Spring Boot backends, vector search with PGVector, and grounded AI applications.
           </p>
 
@@ -74,43 +75,56 @@ export const Hero: React.FC = () => {
             </div>
             <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg spider-glass border border-cyan-500/30 text-xs font-mono text-cyan-300">
               <Layers className="w-3.5 h-3.5 text-cyan-400" />
-              <span>React · Next.js · PostgreSQL</span>
+              <span>Data Ingestion · React · PostgreSQL</span>
             </div>
           </div>
 
-          {/* The Three Primary Action Buttons */}
-          <div className="flex flex-wrap items-center gap-4 w-full sm:w-auto">
+          {/* Primary Action Buttons */}
+          <div className="flex flex-wrap items-center gap-3.5 w-full sm:w-auto">
             {/* 1. Explore My Projects */}
             <a
               href="#projects"
               onClick={() => soundFX.playWebShoot()}
-              className="relative group px-6 py-3.5 rounded-xl bg-gradient-to-r from-red-600 via-red-500 to-rose-600 text-white font-semibold text-sm shadow-spider-red hover:shadow-spider-dual transition-all duration-300 flex items-center gap-2 transform hover:-translate-y-0.5"
+              className="relative group px-5 py-3 rounded-xl bg-gradient-to-r from-red-600 via-red-500 to-rose-600 text-white font-semibold text-sm shadow-spider-red hover:shadow-spider-dual transition-all duration-300 flex items-center gap-2 transform hover:-translate-y-0.5"
             >
               <Sparkles className="w-4 h-4 text-white" />
               <span>Explore My Projects</span>
               <ChevronRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </a>
 
-            {/* 2. View My GitHub */}
+            {/* 2. View Resume PDF */}
+            <a
+              href={PERSONAL_INFO.resumeUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => soundFX.playClick()}
+              className="px-5 py-3 rounded-xl spider-glass border border-red-500/50 hover:border-red-400 text-white font-semibold text-sm transition-all duration-300 flex items-center gap-2 hover:shadow-spider-red transform hover:-translate-y-0.5"
+            >
+              <FileText className="w-4 h-4 text-red-400" />
+              <span>View Resume (PDF)</span>
+              <ExternalLink className="w-3.5 h-3.5 text-slate-400" />
+            </a>
+
+            {/* 3. View My GitHub */}
             <a
               href="https://github.com/Barun-Chhetri"
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => soundFX.playClick()}
-              className="px-5 py-3.5 rounded-xl spider-glass border border-slate-700 hover:border-cyan-500 text-slate-200 hover:text-white font-medium text-sm transition-all duration-300 flex items-center gap-2 hover:shadow-spider-blue transform hover:-translate-y-0.5"
+              className="px-4 py-3 rounded-xl spider-glass border border-slate-700 hover:border-cyan-500 text-slate-200 hover:text-white font-medium text-sm transition-all duration-300 flex items-center gap-2 hover:shadow-spider-blue transform hover:-translate-y-0.5"
             >
               <GithubIcon className="w-4 h-4 text-cyan-400" />
               <span>View GitHub</span>
               <ExternalLink className="w-3.5 h-3.5 text-slate-400" />
             </a>
 
-            {/* 3. Contact Me */}
+            {/* 4. Contact Me */}
             <a
               href="#contact"
               onClick={() => soundFX.playClick()}
-              className="px-5 py-3.5 rounded-xl spider-glass border border-slate-700 hover:border-red-500 text-slate-200 hover:text-white font-medium text-sm transition-all duration-300 flex items-center gap-2 hover:shadow-spider-red transform hover:-translate-y-0.5"
+              className="px-4 py-3 rounded-xl spider-glass border border-slate-700 hover:border-slate-500 text-slate-200 hover:text-white font-medium text-sm transition-all duration-300 flex items-center gap-2 hover:shadow-spider-red transform hover:-translate-y-0.5"
             >
-              <Mail className="w-4 h-4 text-red-400" />
+              <Mail className="w-4 h-4 text-slate-400" />
               <span>Contact Me</span>
             </a>
           </div>
@@ -118,7 +132,7 @@ export const Hero: React.FC = () => {
           {/* Quick status pill */}
           <div className="mt-8 flex items-center gap-2 text-xs font-mono text-slate-400">
             <span className="w-2 h-2 rounded-full bg-emerald-500" />
-            <span>Targeting Software Engineering &amp; AI Internships (Summer 2027)</span>
+            <span>{PERSONAL_INFO.availableForInternship}</span>
           </div>
         </motion.div>
 
@@ -174,7 +188,7 @@ export const Hero: React.FC = () => {
                       Barun Chhetri
                     </h3>
                     <p className="text-[11px] font-mono text-cyan-300">
-                      UNT CS Junior · GPA 3.85
+                      UNT CS Junior · GPA 3.850 · Keller, TX
                     </p>
                   </div>
                   <div className="flex items-center gap-1 text-[11px] font-mono text-red-400 bg-red-950/80 px-2 py-0.5 rounded border border-red-500/40">

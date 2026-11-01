@@ -139,6 +139,18 @@ export const Navbar: React.FC<NavbarProps> = ({ motionEnabled, onToggleMotion })
               <Activity className={`w-4 h-4 ${motionEnabled ? 'text-red-400' : 'text-slate-400'}`} />
             </button>
 
+            {/* Resume Quick CTA */}
+            <a
+              href={PERSONAL_INFO.resumeUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => soundFX.playClick()}
+              className="flex items-center gap-1.5 px-3 py-2 rounded-xl bg-red-950/60 hover:bg-red-900/80 text-red-300 hover:text-white border border-red-500/40 text-xs font-mono font-semibold transition-all hover:shadow-spider-red"
+            >
+              <span>Resume</span>
+              <ArrowUpRight className="w-3.5 h-3.5 text-red-400" />
+            </a>
+
             {/* GitHub Quick CTA */}
             <a
               href="https://github.com/Barun-Chhetri"
@@ -199,6 +211,15 @@ export const Navbar: React.FC<NavbarProps> = ({ motionEnabled, onToggleMotion })
                 </a>
               );
             })}
+            <a
+              href={PERSONAL_INFO.resumeUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-2 px-4 py-2.5 rounded-xl text-sm font-mono text-red-300 bg-red-950/50 border border-red-500/40 flex items-center justify-between"
+            >
+              <span>View Resume (PDF)</span>
+              <ArrowUpRight className="w-4 h-4 text-red-400" />
+            </a>
           </nav>
         </div>
       )}

@@ -1,6 +1,6 @@
 # Barun Chhetri — Interactive 3D Spider-Man-Inspired Developer Portfolio
 
-A production-quality, cinematic personal portfolio built for **Barun Chhetri**, Computer Science Junior at the **University of North Texas (GPA 3.850)**, specializing in Full-Stack Development, Spring Boot Backends, PGVector Semantic RAG systems, and modern React/Next.js architectures.
+A production-quality, cinematic personal portfolio built for **Barun Chhetri**, Computer Science Junior at the **University of North Texas (GPA 3.850)**, specializing in Full-Stack Development, Data Acquisition Pipelines, Spring Boot Backends, PGVector Semantic RAG systems, and modern React 19/Next.js 16 architectures.
 
 ---
 
@@ -12,7 +12,7 @@ A production-quality, cinematic personal portfolio built for **Barun Chhetri**, 
   - **Interactive Cursor:** Generates silky trailing web strands and shoots glowing web splats on click.
   - **Interactive 3D Web-Slinging Lab:** Click any floating tech orb (Spring Boot, PGVector, React, Grounded RAG, Spider-Web Core, 180-Day Tracker) to launch an elastic web strand pulling it with Hooke's spring mechanics and pendulum drift, or drag & throw objects with momentum!
   - **Synthesized Web-Shooter Audio:** Real-time Web Audio API synthesized sound effects ("thwip" audio and spring recoil) with zero external audio assets, complete with a global mute toggle.
-- **Authentic Identity:** Prominently features Barun's actual photograph in the Spider-Man suit with custom 3D perspective tilt and verified academic standing (UNT CS Junior · GPA 3.85).
+- **Authentic Identity & Resume Access:** Prominently features Barun's actual photograph with custom 3D perspective tilt, verified academic standing (UNT CS Junior · GPA 3.850 · Keller, TX), and 1-click access to his updated resume PDF.
 
 ---
 
@@ -21,38 +21,37 @@ A production-quality, cinematic personal portfolio built for **Barun Chhetri**, 
 ### 1. [AI Resume Intelligence Platform](https://resume-analyzer.barunchamlagain.me/)
 - **Live Demo:** [https://resume-analyzer.barunchamlagain.me/](https://resume-analyzer.barunchamlagain.me/)
 - **Source Code:** [https://github.com/Barun-Chhetri/Resume_Analyzer](https://github.com/Barun-Chhetri/Resume_Analyzer)
-- **Stack:** Java 21, Spring Boot 3.4, Spring AI, PostgreSQL 16, PGVector, React 18, Vite, Docker Compose, Flyway.
-- **Highlights:** Multi-format document parsing (Apache PDFBox/POI), 1536-dimensional PGVector dense vector embeddings, 4-tier semantic matching (Exact, Normalized, Alias, Cosine Similarity >= 0.65), critical vs adjacent gap partitioning, and zero-hallucination RAG recommendations.
+- **Stack:** Java 21, Spring Boot, Spring AI, PostgreSQL, PGVector, React, Docker Compose, Flyway.
+- **Highlights:** Full-stack platform for data acquisition and ingestion of resumes (PDF, DOCX, TXT) and job postings using Apache PDFBox and Apache POI. 4-tier entity resolution and skill-matching engine (exact, normalized, alias table, and cosine similarity on 1536-dimensional embeddings) backed by a canonical taxonomy of 100+ skills. Skill-gap analysis separating critical from preferred gaps, and zero-hallucination RAG recommendations constrained to verified resume content. Documented with OpenAPI/Swagger and verified via MockMvc integration tests.
 
-### 2. [180-Day SWE Interview Preparation Tracker](https://interview-crack.barunchamlagain.me/)
+### 2. [180-Day Interview Prep Tracker](https://interview-crack.barunchamlagain.me/)
 - **Live Demo:** [https://interview-crack.barunchamlagain.me/](https://interview-crack.barunchamlagain.me/)
 - **Source Code:** [https://github.com/Barun-Chhetri/interview-crack-tracker](https://github.com/Barun-Chhetri/interview-crack-tracker)
-- **Stack:** Next.js 15 (App Router), React, TypeScript, Tailwind CSS, PostgreSQL 16, Prisma ORM, BCrypt, JWT, Vitest.
-- **Highlights:** Digitize 180 study days and 900+ tasks from the handbook PDF, persistent study timer with pause time exclusion, partial carryover workload balancer with >3hr overload detection, STAR behavioral story bank, F-1 CPT checklist, and 26 passing automated Vitest scenarios.
+- **Stack:** Next.js 16, React 19, TypeScript, Tailwind CSS, PostgreSQL, Prisma ORM, Docker, BCrypt, JWT, Vitest.
+- **Highlights:** Digitize a 180-day study handbook into 900 tasks and 965 spaced-repetition review intervals parsed from a PDF and seeded via Prisma. Persistent timestamp study timer that survives refreshes, partial task carryover with undo and duplicate prevention in database transactions, daily/weekly/monthly reports emailed via Resend/SMTP, and 26 passing automated Vitest scenarios.
 
 ---
 
-## 🏆 Featured Certificates (Exactly 4)
+## 🏆 Featured Certificates
 
-1. **Career Essentials in Generative AI by Microsoft and LinkedIn**  
-   *Issuer:* Microsoft & LinkedIn · *Issued:* May 2026  
-   *Credential ID:* `ca3b133a124874ec4b7252fab670afde949c5cb8d3da02fe93466a59e4649201`  
-   *Verification:* [Public Certificate on LinkedIn](https://www.linkedin.com/learning/certificates/ca3b133a124874ec4b7252fab670afde949c5cb8d3da02fe93466a59e4649201)
-
-2. **Introduction to Large Language Models**  
+1. **Introduction to Large Language Models**  
    *Issuer:* Google · *Issued:* May 2026  
    *Credential ID:* `24175569`  
-   *Verification:* Copyable ID badge with official Google Cloud Skills Boost credential attribution.
+   *Verification:* Google Cloud Skills Boost credential.
 
-3. **SQL (Basic) Certificate**  
-   *Issuer:* HackerRank · *Issued:* May 2026  
-   *Credential ID:* `B610B8D34CAD`  
-   *Verification:* [Public Certificate on HackerRank](https://www.hackerrank.com/certificates/B610B8D34CAD)
+2. **Introduction to Artificial Intelligence**  
+   *Issuer:* LinkedIn · *Issued:* September 2026  
+   *Verification:* [Public Certificate on LinkedIn](https://www.linkedin.com/in/Barun-Chhetri)
 
-4. **Cybersecurity Foundations**  
+3. **Cybersecurity Foundations**  
    *Issuer:* LinkedIn · *Issued:* September 2026  
    *Credential ID:* `1468e96aa129ad86380513601b91571925f04158e7b4fd393763f92ee35e7dc5`  
    *Verification:* [Public Certificate on LinkedIn](https://www.linkedin.com/learning/certificates/1468e96aa129ad86380513601b91571925f04158e7b4fd393763f92ee35e7dc5)
+
+4. **Career Essentials in Generative AI by Microsoft and LinkedIn**  
+   *Issuer:* Microsoft & LinkedIn · *Issued:* May 2026  
+   *Credential ID:* `ca3b133a124874ec4b7252fab670afde949c5cb8d3da02fe93466a59e4649201`  
+   *Verification:* [Public Certificate on LinkedIn](https://www.linkedin.com/learning/certificates/ca3b133a124874ec4b7252fab670afde949c5cb8d3da02fe93466a59e4649201)
 
 ---
 

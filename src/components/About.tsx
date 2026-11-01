@@ -11,7 +11,9 @@ import {
   Shield,
   Layers,
   MapPin,
-  CheckCircle2
+  CheckCircle2,
+  FileText,
+  ExternalLink
 } from 'lucide-react';
 
 export const About: React.FC = () => {
@@ -74,6 +76,18 @@ export const About: React.FC = () => {
                 <span className="text-slate-400">Academic Standing</span>
                 <span className="text-cyan-400 font-bold">GPA: 3.850 / 4.00</span>
               </div>
+
+              {/* Direct Resume Download Button */}
+              <a
+                href={PERSONAL_INFO.resumeUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-3 w-full py-2.5 px-4 rounded-xl bg-gradient-to-r from-red-600 via-rose-600 to-red-500 hover:from-red-500 hover:to-rose-500 text-white text-xs font-mono font-semibold flex items-center justify-center gap-2 shadow-spider-red transition-all transform hover:-translate-y-0.5"
+              >
+                <FileText className="w-3.5 h-3.5" />
+                <span>Download Resume (PDF)</span>
+                <ExternalLink className="w-3 h-3 opacity-80" />
+              </a>
             </div>
           </motion.div>
 
@@ -176,10 +190,10 @@ export const About: React.FC = () => {
               <div className="p-4 rounded-xl spider-glass border border-slate-800 text-center">
                 <Database className="w-6 h-6 text-cyan-400 mx-auto mb-2" />
                 <h4 className="text-xs font-mono font-bold text-white uppercase tracking-wider mb-1">
-                  Data &amp; Databases
+                  Data Acquisition &amp; Ingestion
                 </h4>
                 <p className="text-[11px] text-slate-400 leading-tight">
-                  PostgreSQL, Flyway migrations, indexing &amp; complex SQL
+                  Apache PDFBox, POI, 4-tier entity resolution &amp; Flyway
                 </p>
               </div>
 
@@ -189,7 +203,7 @@ export const About: React.FC = () => {
                   Full-Stack Reliability
                 </h4>
                 <p className="text-[11px] text-slate-400 leading-tight">
-                  Clean REST APIs, JWT authentication &amp; automated test suites
+                  Spring Boot, Next.js 16, JWT auth &amp; 26-scenario Vitest suite
                 </p>
               </div>
             </div>
